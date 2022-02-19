@@ -88,7 +88,9 @@
     }
 }
   @media (max-width: 465px) {
-    
+    .tab ul{
+      grid-template-columns: auto auto auto;
+    }
    
     .tabs label {
       

@@ -97,7 +97,7 @@ a{
     .navbar{padding: 15px;}
 }
 @media screen and (max-width:480px) {
-    .intro-outer{padding-left: 0px}
+    .intro-outer{padding-left: 20px !important}
 }
 h4,h3{
     font-family: var(--family-Raelway);
@@ -139,6 +139,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     
 }
 /* Contact Detailes */
@@ -165,7 +166,7 @@ h1{
     list-style: none;
     color: var(--text-color);
     font-size: 19px;
-    margin:25px 0;
+    margin:15px 0;
     cursor: pointer;
     transition: transform 0.3s, color 0.3s;
 }
@@ -236,6 +237,7 @@ section{
     .social-sites .line{
         display: none;
     }
+    
 }
 #intro{
     display: flex;
@@ -525,6 +527,10 @@ section{
     transform: translate(18px,-2px) rotatez(45deg);
   
   }
+ 
+  .image{
+      border-radius: 4px !important;
+  }
  @media screen and (max-width:1080px) {
      
      .project{
@@ -532,8 +538,8 @@ section{
          justify-content: center !important;
      }
      .project .image{
-        width: unset !important;
-        max-width: 400px !important;
+        width: 500px !important;
+        max-width: 450px !important;
      }
     .detailes{
         position: absolute;
@@ -559,10 +565,22 @@ section{
         text-align: left;
     }
     .project-overlay{
-        opacity: 0.9;
+        opacity: 0.95;
         background-color: var(--black-light);
+        
     }
     
+ }
+ .icon:hover svg{
+     fill:var(--highlight)
+ }
+ @media screen and (max-width: 480px){
+     .outer{
+         padding-left: 20px !important;
+     }
+     .content{
+         padding: 5px;
+     }
  }
   @keyframes comeIn{
       from{left: 100%;}
