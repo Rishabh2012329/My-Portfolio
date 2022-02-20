@@ -46,6 +46,7 @@
    
   .tabs input[type="radio"]:checked + label {
     background: var(--black-light);
+    color: var(--highlight);
   }
    
   .tabs input[type="radio"]:checked + label + .tab {
@@ -87,7 +88,7 @@
         display: block;
     }
 }
-  @media (max-width: 465px) {
+  @media (max-width: 485px) {
     .tab ul{
       grid-template-columns: auto auto auto;
     }
@@ -95,6 +96,10 @@
     .tabs label {
       
       margin-left: 50px;
+    }
+    .backbox{
+      top:15px !important;
+      right:15px !important;
     }
   }
 .description{

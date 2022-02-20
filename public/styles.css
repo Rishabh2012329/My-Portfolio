@@ -11,9 +11,10 @@
     --black-light: #092a30;
     --text-color-dark:#8892B0;
     --family-Raelway: 'Raleway', sans-serif;
+    --background:#072227
 }
 body{
-    background-color: #072227;
+    background-color: var(--background);
 }
 .flex{
     display: flex;
@@ -26,6 +27,11 @@ body{
 }
 .w-100{
     width: 100%;
+}
+.circle{
+    border-radius: 50%;
+    background-color: var(--highlight);
+    padding:10px
 }
 /* navbar styles */
 .navbar{
@@ -41,6 +47,9 @@ body{
     font-size: 23px;
     cursor: pointer;
     margin-left: 10px;
+    color: var(--background);
+    font-family:Pacifico,cursive;
+    font-weight: 600;
 }
 a{
     text-decoration: none;
@@ -212,7 +221,7 @@ section{
     .contact-detailes .line{
         display: none;
     }
-    .icons{display:flex;flex-direction: row}
+    .icons{display:flex;flex-direction: row !important}
     .icon{margin: 20px 15px;}
     .email{
         writing-mode: unset;
@@ -587,3 +596,12 @@ section{
       to{left: 120px;}
   }
   
+  [data-inviewport="scale-in"] { 
+    transition: 0.8s;
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  [data-inviewport="scale-in"].is-inViewport { 
+    transform: scale(1);
+    opacity: 1;
+  }

@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito&family=Raleway:wght@300;400&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,7 +26,7 @@
     <!-- NavBar -->
     <section id="intro">
       <nav class="navbar">
-        <div class="logo highlight">R</div>
+        <div class="logo highlight">RB</div>
         
         <div >
           <div style="width: 100%;justify-content: flex-end;" class="flex flex-row">
@@ -51,7 +52,7 @@
                   <span class="highlight">04.</span>
                   <span>Contact</span>
                 </a>
-                <button class="button-1">Resume</button>
+                <button class="button-1" onclick='redirectTo(`https://rishabh-baid.herokuapp.com/Rishabh-Baid-Resume.pdf`)'>Resume</button>
               </div>
             </label>
           </div>
@@ -71,11 +72,11 @@
             <span class="highlight">04.</span>
             <span>Contact</span>
           </a>
-          <button class="button-1">Resume</button>
+          <button  onclick='redirectTo(`https://rishabh-baid.herokuapp.com/Rishabh-Baid-Resume.pdf`)' class="button-1">Resume</button>
         </div>
       </nav>
 
-      <div class="intro-outer">
+      <div class="intro-outer" data-inviewport="scale-in">
         <div class="intro-inner">
           <h4>Hi, my name is</h4>
           <h1>Rishabh Baid.</h1>
@@ -90,7 +91,7 @@
       </div>
     </section>
 
-    <section id="about">
+    <section id="about" data-inviewport="scale-in">
       <div class="outer">
         
         <h2 class="text-color  w-100 heading flex align-items-center"><span class="highlight" style="margin-right:6px">01.</span> Skills <div class="line-horizontal line-width-900"></div></h2>
@@ -156,7 +157,7 @@
       </div>
     </section>
 
-    <section id="experience">
+    <section id="experience" data-inviewport="scale-in">
       <div class="outer flex flex-row right" style="margin-right: 250px;">
         <div>
         <h2 class="text-color  w-100 heading flex align-items-center"><span class="highlight" style="margin-right:6px">02.</span> Exprience <div class="line-horizontal line-width-900"></div></h2>
@@ -223,10 +224,10 @@ structured code.
 
     <section id="projects" style="height: auto;">
         <div class="outer">
-          <h2 class="text-color  w-100 heading flex align-items-center"><span class="highlight" style="margin-right:6px">03.</span> Projects <div class="line-horizontal line-width-900"></div></h2>
+          <h2  data-inviewport="scale-in" class="text-color  w-100 heading flex align-items-center"><span class="highlight" style="margin-right:6px">03.</span> Projects <div class="line-horizontal line-width-900"></div></h2>
           <div class="content" style="max-width: 1000px;padding-top: 40px;">
 
-              <div class="project">
+              <div class="project"  data-inviewport="scale-in">
                   <div class="image" style="width: 39vw;height: 320px;background-image: url(https://rishabh-baid.herokuapp.com/p2.png);background-size: auto 330px;background-position: center center;">
                       <!-- <img src="https://rishabh-baid.herokuapp.com/p1.png" style="width: 100%;height: 100%;border-radius: 4px;" /> -->
                       <div class="project-overlay"></div>
@@ -241,14 +242,14 @@ structured code.
                             <span>React</span> <span>Nodejs</span> <span style="margin-right:0px ;">MongoDB</span>
                         </div>
                         <div class="tech" style="margin-top: 0;">
-                            <span class="icon"><i class="fab fa-github"></i></span>
-                            <span class="icon" style="margin-right: 0;"><i style="font-weight: 400;" class="fas fa-external-link"></i></span>
+                            <!-- <span class="icon"><i class="fab fa-github"></i></span> -->
+                            <span class="icon" style="margin-right: 0;"><a href="https://app.opentabs.org/tabbing" target="_blank"><i style="font-weight: 400;" class="fas fa-external-link"></i> </a></span>
                         </div>
                     </div>
                   </div>
               </div>
 
-              <div class="project flex right" >
+              <div class="project flex right"  data-inviewport="scale-in" >
                 <div class="image" style="width: 39vw;height: 330px;background-image: url(https://rishabh-baid.herokuapp.com/p1.png);background-size: auto 330px;background-position: center center;">
                     <!-- <img src="https://rishabh-baid.herokuapp.com/p2.png" style="width: 100%;height: 100%;"/> -->
                     <div class="project-overlay"></div>
@@ -264,9 +265,8 @@ structured code.
                           <span style="margin-left:0px ;">React</span> <span>Redux</span> <span>Nodejs</span> <span >MongoDB</span>
                       </div>
                       <div class="tech" style="margin-top: 0;">
-                        <span class="icon" style="margin-left: 0;"><i style="font-weight: 400;" class="fas fa-external-link"></i></span>
-                          <span class="icon" ><i class="fab fa-github"></i></span>
-                          
+                          <span class="icon" style="margin-left: 0;"><a href="https://gvifoodcart.com" target="_blank"><i style="font-weight: 400;" class="fas fa-external-link"></i></a></span>
+                          <span class="icon" ><a href="https://github.com/Rishabh2012329/FoodieFront" target="_blank"><i class="fab fa-github"></i></a></span>  
                       </div>
                   </div>
                 </div>
@@ -301,7 +301,7 @@ structured code.
 
    
 
-    <section id="contact" class="GetInTouch" style="padding-right: 0px;height: 70vh !important;">
+    <section id="contact" class="GetInTouch" style="padding-right: 0px;height: 70vh !important;"  data-inviewport="scale-in">
       <div class="outer flex flex-col align-items-center " style="padding-left: 0px;display:flex">
         <h2 class="text-color  heading flex align-items-center"><span class="highlight" style="margin-right:6px">04.</span> What's Next ? </h2>
         
@@ -311,7 +311,7 @@ structured code.
             <div class="bottomPosition">
                 Hi I am currently looking for an opportunity to work as a Software Engineer.
             </div>
-            <button class="button-1" style="font-size: 20px;padding:15px;padding-left: 20px;padding-right: 20px;">
+            <button class="button-1" onclick='redirectTo(`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=baidrishabh443@gmail.com`)' style="font-size: 20px;padding:15px;padding-left: 20px;padding-right: 20px;">
               Connect
             </button>
         </div>
@@ -322,7 +322,8 @@ structured code.
     </section>
     <div class="social-sites">
       <ul class="icons flex flex-col align-items-center">
-        <li class="icon"><a href="https://www.linkedin.com/in/rishabh-baid-9b4182191/" target="_blank"><i class="fas fa-code"></i></a></li>
+        <li class="icon"><a href="https://leetcode.com/baidrishabh443/" target="_blank"><svg width="24" height="24" viewBox="0 0 24 24" fill="#CCD6F6" role="img" xmlns="http://www.w3.org/2000/svg"><title>LeetCode icon</title><path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039zM20.811 13.01H10.666c-.702 0-1.27.604-1.27 1.346s.568 1.346 1.27 1.346h10.145c.701 0 1.27-.604 1.27-1.346s-.569-1.346-1.27-1.346z"/></svg></a></li>
+        <li class="icon"><a href="https://auth.geeksforgeeks.org/user/baidrishabh443/practice/" target="_blank"><i class="fas fa-code"></i></a></li>
         <li class="icon"><a href="https://www.linkedin.com/in/rishabh-baid-9b4182191/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
         <li class="icon" style="margin-bottom: 25px;"><a href="https://github.com/Rishabh2012329" target="_blank"><i class="fab fa-github"></i></a></li>
       </ul>
@@ -331,7 +332,7 @@ structured code.
 
     <div class="contact-detailes">
       <ul class="icons">
-        <li class="email">baidrishabh443@gmail.com</li>
+        <li class="email"><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=baidrishabh443@gmail.com" target="_blank">baidrishabh443@gmail.com</a></li>
       </ul>
       <div class="line line-height-200"></div>
     </div>
@@ -374,6 +375,28 @@ structured code.
        gl_FragColor = gl_FragColor * texture2D( pointTexture, gl_PointCoord );
     
      }
+    </script>
+    <script>
+        const inViewport = (entries, observer) => {
+          entries.forEach(entry => {
+            if(!entry.target.classList.contains("is-inViewport"))
+              entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+          });
+        };
+
+        const Obs = new IntersectionObserver(inViewport);
+        const obsOptions = {}; //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
+
+        // Attach observer to every [data-inviewport] element:
+        const ELs_inViewport = document.querySelectorAll('[data-inviewport]');
+        ELs_inViewport.forEach(EL => {
+          Obs.observe(EL, obsOptions);
+        });
+    </script>
+    <script>
+      const redirectTo = function(url){
+          window.open(url)
+      }
     </script>
     <script src="/GetInTouch.js"></script>
   </body>
