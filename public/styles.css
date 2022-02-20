@@ -265,13 +265,13 @@ section{
 }
 
 /* scroll bar */
-::-webkit-scrollbar {
+*::-webkit-scrollbar{
     width: 10px;
   }
 /* Track */
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background-color: var(--highlight-dark); 
     border-radius: 10px;
 }
@@ -480,11 +480,9 @@ section{
         left: 120px;
         background-color: var(--black-light);
         box-shadow: -10px 0 10px rgba(0,0,0,0.5) ;
-        
+        z-index: 8;
+        transition: all 0.5s;
     }
-    .navbar input[type="checkbox"]:checked::-webkit-scrollbar {
-        display: none;
-      }
       
     .navbar input[type="checkbox"]:checked~.side{
         display: flex;

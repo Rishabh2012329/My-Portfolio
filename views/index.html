@@ -30,25 +30,25 @@
         
         <div >
           <div style="width: 100%;justify-content: flex-end;" class="flex flex-row">
-            <label for="check" class="ham">
-              <input type="checkbox" id="check"/> 
+            <label for="check1" class="ham">
+              <input type="checkbox" id="check1"/> 
               <span></span>
               <span></span>
               <span></span>
               <div class="side">
-                <a href="#about" class="nav-item">
+                <a onclick="disableSide()" href="#about" class="nav-item">
                   <span class="highlight">01.</span>
                   <span>Skills</span>
                 </a>
-                <a href="#experience" class="nav-item">
+                <a onclick="disableSide()" href="#experience" class="nav-item">
                   <span class="highlight">02.</span>
                   <span>Exprience</span>
                 </a>
-                <a href="#projects" class="nav-item">
+                <a onclick="disableSide()" href="#projects" class="nav-item">
                   <span class="highlight">03.</span>
                   <span>Projects</span>
                 </a>
-                <a href="#contact" class="nav-item">
+                <a onclick="disableSide()" href="#contact" class="nav-item">
                   <span class="highlight">04.</span>
                   <span>Contact</span>
                 </a>
@@ -396,6 +396,19 @@ structured code.
     <script>
       const redirectTo = function(url){
           window.open(url)
+      }
+      document.getElementById("check1").onclick=(e)=>{
+        document.body.style.overflow = document.body.style.overflow==="hidden"?"auto":"hidden"
+      }
+      document.getElementById("check1").onchange=async (e)=>{
+        // if(e.target.value){
+        //  await document.getElementById("sidebar").classList.add()
+        // }        
+      }
+      const disableSide = () =>{
+        
+        document.getElementById("check1").checked = false
+        document.body.style.overflow = document.body.style.overflow==="hidden"?"auto":"hidden"
       }
     </script>
     <script src="/GetInTouch.js"></script>
