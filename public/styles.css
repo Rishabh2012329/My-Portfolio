@@ -539,7 +539,9 @@ section{
       border-radius: 4px !important;
   }
  @media screen and (max-width:1080px) {
-     
+    .tech-1{
+        margin-left: 10px !important;
+    }
      .project{
          display: flex !important;
          justify-content: center !important;
@@ -588,6 +590,7 @@ section{
      .content{
          padding: 5px;
      }
+     
  }
   @keyframes comeIn{
       from{left: 100%;}
