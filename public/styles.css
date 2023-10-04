@@ -257,7 +257,7 @@ section{
     font-family: var(--family-Raelway);
     padding-left: 25px ;
     padding-top:30px;
-    max-width: 700px;
+    max-width: 850px;
 }
 .content p{
     line-height: 1.6;
@@ -606,3 +606,21 @@ section{
     transform: scale(1);
     opacity: 1;
   }
+
+  .content-project{
+    color: var(--text-color-dark);
+    font-family: var(--family-Raelway);
+    padding-left: 25px ;
+    padding-top:30px;
+    width: 100%;
+    max-width: 100%;
+}
+.content-project p{
+    line-height: 1.6;
+    margin:20px 0px
+}
+@media screen and (max-width: 1600px){
+    .content-project{
+        max-width: 10000px !important;
+    }
+}
